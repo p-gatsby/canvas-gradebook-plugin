@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Canvas Auto Gradebook",
+  "version": "1.0",
+  "description": "A simple Canvas extension to insert zeros automatically in the gradebook",
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": "media/images/icon.png"
+  },
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "js/jquery-3.7.1.min.js",
+        "css/bootstrap.min.css",
+        "js/bootstrap.min.js",
+        "css/all.min.css"
+      ],
+      "matches": ["<all_urls>"]
+    }
+  ],
+  "permissions": []
+}

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Canvas Auto Gradebook</title>
+
+    <!-- Bootstrap CSS (local) -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Font Awesome (local) -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="d-flex justify-content-center align-items-center vh-100">
+    <div class="container">
+      <div class="text-center w-100" id="title">Canvas Auto Gradebook</div>
+
+      <div class="mb-3">
+        <div class="d-flex align-items-center" style="height: 50px">
+          <input
+            type="password"
+            class="form-control mr-2"
+            id="apiKey"
+            placeholder="Enter API Key"
+          />
+
+          <button class="win98-button" type="button" id="toggleApiKey">
+            <i class="fa-solid fa-eye"></i>
+          </button>
+        </div>
+      </div>
+      <div class="mb-3">
+        <div class="d-flex align-items-center" style="height: 50px">
+          <input
+            type="text"
+            class="form-control w-50 mr-2"
+            id="courseID"
+            placeholder="Enter Course ID"
+          />
+
+          <button class="win98-button mr-2" type="button" id="searchCourse">
+            Start Search <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <button
+            class="win98-button"
+            type="button"
+            id="refreshBrowser"
+            disabled
+          >
+            Refresh
+          </button>
+
+          <div>
+            <img
+              src="media/gifs/tshell32_150.gif"
+              alt=""
+              id="searchGif"
+              style="display: none"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="progress-container" id="progressContainer">
+        <div class="win98-loading-bar" id="loadingBar">
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+          <div class="win98-segment"></div>
+        </div>
+        <span id="progressText" class="mx-2">0%</span>
+        <button class="win98-button" id="saveGrades" disabled>
+          Save Grades
+        </button>
+      </div>
+    </div>
+
+    <!-- Load JS (from local file) -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>
+  </body>
+</html>

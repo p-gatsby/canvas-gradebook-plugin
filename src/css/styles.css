@@ -1,0 +1,82 @@
+@import url(all.min.css);
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 14px;
+  background-color: #c3c3c3;
+  color: black;
+}
+
+#title {
+  font-size: 18px;
+}
+
+.container {
+  width: 500px;
+  padding: 20px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.progress-container {
+  height: 35px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.win98-loading-bar {
+  width: 275px;
+  height: 30px;
+  background: #c0c0c0;
+  border: 2px solid #808080;
+  box-shadow: inset -2px -2px 0px #ffffff, inset 2px 2px 0px #404040;
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  overflow: hidden;
+}
+
+.win98-segment {
+  width: 15px;
+  height: 20px;
+  background: navy;
+  box-shadow: inset -2px -2px 0px #000080, inset 2px 2px 0px #0000a0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.win98-button {
+  font-family: "MS Sans Serif", Tahoma, sans-serif;
+  font-size: 14px;
+  color: black;
+  background: #c0c0c0;
+  border: 2px solid #808080;
+  padding: 5px 12px;
+  height: 35px;
+  cursor: pointer;
+  box-shadow: 2px 2px 0px #404040, -2px -2px 0px #ffffff;
+  outline: none;
+}
+
+.win98-button:active {
+  box-shadow: inset 2px 2px 0px #404040, inset -2px -2px 0px #ffffff;
+}
+
+.win98-button:disabled {
+  color: #a0a0a0;
+  border: none;
+  border-radius: 0;
+  height: 35px;
+  box-shadow: inset -1px -1px #0a0a0a, inset 1px 1px #fff, inset -2px -2px grey,
+    inset 2px 2px #dfdfdf;
+  box-sizing: border-box;
+}
